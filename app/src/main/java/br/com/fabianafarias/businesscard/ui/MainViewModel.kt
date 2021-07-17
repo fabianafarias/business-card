@@ -25,7 +25,7 @@ class MainViewModelFactory(private val repository: BusinessCardRepository) :
             @Suppress("UNCHECKED_CAST")
             return MainViewModel(repository) as T
         }
-        throw IllegalArgumentException("Unknow ViewModel class")
+        throw IllegalArgumentException("Unknown ViewModel class")
     }
 
 }
